@@ -51,10 +51,6 @@ if ($(window).width() <= 767) {
         margin:10,
         nav:true,
         navText:false,
-        touchDrag  : false,
-        mouseDrag  : false,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
         responsive:{
             0:{
                 items:1

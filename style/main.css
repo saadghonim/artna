@@ -175,7 +175,7 @@ text-decoration: none;
   background-color: #ffffff;
   min-width: 119px;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-  padding: 18px 16px;
+  padding: 12px 5px 7px 5px;
   z-index: 99;
   border-radius: 3px;
   text-align: center;
@@ -205,16 +205,15 @@ text-decoration: none;
   align-items: center;
 }
 @media(max-width:1400px){
-
-  header .right_{
-    width: 60%;
+  header .left_{
+    width:35%
   }
-  /* .nav_ {
-    display: none;
-  } */
+  header .right_{
+    width: 75%;
+  }
+
   .right_{
     display: flex;
-    flex-direction: row-reverse;
 }
   .user_ {width: auto;}
   .header .left_{
@@ -299,9 +298,10 @@ text-decoration: none;
   transition: .5s;
 } 
 .bt_:hover{
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgb(0, 0, 0);
   color: #ffffff;
   transition: .5s;
+  border: none;
 }
 .slider .owl-nav{display: none;}
 .slider .owl-dots{
@@ -360,38 +360,27 @@ text-decoration: none;
 @media(max-width:576px){
   .slider .text-slide span{
     font-size: 20px;
-    color: #030303;
+    margin-bottom: 20px;
   }
   .slider .text-slide h2{
     font-size: 26px;
-  margin-bottom: 10px;
-  color: #030303;
+    margin-bottom: 10px;
   }
   .slider .text-slide {
-    top: 58px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
 }
 .slider .bt_ {
   width: 134px;
   height: 32px;
   font-size: 16px;
-  color: #030303;
-  border-color: #030303;
+  margin: auto;
 }
 .slider .owl-dot.active{
   background-color: #b06aff;
 }
-.slider .img-slide{
-  display: flex;
-  flex-direction: column;
 
-}
-.slider .text-slide{
-  position: static;
-}
-.slider .img-slide a{
-  margin-bottom: 50px;
-
-}
 }
 /* ***********end slider************ */
 
@@ -404,12 +393,13 @@ text-decoration: none;
   font-size: 16px;
   font-family: "Roboto";
   color: rgb(117, 117, 117);
+  margin-bottom: 15px;
 }
 .special h4{
   font-size: 36px;
   font-family: "Roboto-l";
   color: rgb(0, 0, 0);
-  margin-top: 15px;
+  margin-bottom: 30px;
 }
 .special .s-img{
   margin-bottom:30px;
@@ -447,7 +437,6 @@ text-decoration: none;
   }
 
   .special h4{
-    margin-top: 10px;
     margin-bottom: 30px;
   }
 }
@@ -524,8 +513,7 @@ text-decoration: none;
   font-size: 14px;
   font-family:"Roboto";
   color: rgb(0, 0, 0);
-  margin-bottom:10px;
-  line-height: 0;
+  margin-bottom:5px;
 }
 .n_img .text_n a:hover{
   text-decoration: none;
@@ -713,6 +701,9 @@ text-decoration: none;
   .backg_none .n_left{
     padding: 90px 0;
   }
+  .navbar-header{
+    display: none;
+  }
 }
 @media(max-width:576px){
   .n_left h4{
@@ -729,7 +720,7 @@ text-decoration: none;
 
 /*  **************start banner***********  */
 .banner{
-  background-image: url("../images/banner.png");
+  background-image: url("../images/55.jpg");
   background-attachment: fixed;
   background-size: cover;
   height: 500px;
@@ -1126,7 +1117,6 @@ footer .f_list .nest_list {
     padding-bottom: 20px;
   }
   footer .f_list .nest_list{
-    margin-bottom: 10px;
     text-align: left;
   }
   footer .down_f{
@@ -1180,10 +1170,6 @@ footer .f_list .nest_list {
 
 }
 /* **************end copy************** */
-
-
-
-
 
 
 
@@ -1342,5 +1328,65 @@ footer .f_list .nest_list {
     margin: 0;
     background: #fff;
     padding: 10px;
+  }
+}
+@media (min-width: 992px){
+
+  .hidden_lg{display: none;}
+}
+@media (max-width: 992px){
+  .hidden_{display:none}
+
+  .user_ .lang{
+    display: none;
+  }
+  .nav_ul .input_header {
+    width: 90%;
+    margin: auto;
+    margin: 0 auto 30px;
+
+  }
+  .nav_ul .lang{
+    display: block;
+  }
+  header .left_{
+    justify-content: flex-start;
+  }
+  header .right_{
+    justify-content: flex-end;
+    
+  }
+  .nav_ .down_f:after{
+    left: 60px!important;
+    right: auto;
+    top:-10px
+  }
+  .nav_ .down_f{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+  }
+  .nav_ .down_f:hover{
+    text-decoration: none;
+    transition:.5s;
+  }
+  .nav_ .nest_list a{
+    font-size: 15px;
+  }
+  .navbar-nav>li>a, .anc_nav.dropdown-toggle{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .navbar-collapse .nav_ul{
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px){
+ 
+  .navbar-collapse.collapse{
+    display: none!important;
+  }
+  .js-navbar-collapse.in{
+    display: block!important;
   }
 }
