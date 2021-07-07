@@ -619,6 +619,7 @@ text-decoration: none;
   background-color: rgba(0, 0, 0, 0.5)!important;
   z-index: 99;
 }
+
 .n_right button.owl-dot.active{
   background-color: #b06aff!important;
 }
