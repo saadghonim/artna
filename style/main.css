@@ -245,7 +245,11 @@ text-decoration: none;
     display: none;
   }
 }
-
+@media(max-width:450px){
+  .logo img{
+    width: 90%;
+  }
+}
 /* *********************end header******************* */
 
 /* ***********start slider******** */
