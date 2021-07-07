@@ -363,18 +363,18 @@ text-decoration: none;
   }
 }
 @media(max-width:576px){
-  .slider .text-slide span{
-    font-size: 19px;
-    padding-bottom: 10px;
-  }
-  .slider .text-slide h2{
-    font-size: 26px;
-    margin-bottom: 10px;
-  }
-  .slider .text-slide {
-    top: 70px;
-    display: flex;
-    flex-direction: column;
+.slider .text-slide span{
+  font-size: 19px;
+  padding-bottom: 10px;
+}
+.slider .text-slide h2{
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.slider .text-slide {
+  top: 70px;
+  display: flex;
+  flex-direction: column;
 }
 .slider .bt_ {
   width: 118px;
