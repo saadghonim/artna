@@ -382,7 +382,7 @@ text-decoration: none;
 
 }
 .slider .text-slide {
-  top: 223px;
+  top: 210px;
   display: flex;
   flex-direction: column;
 }
