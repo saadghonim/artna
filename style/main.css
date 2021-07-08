@@ -1329,7 +1329,7 @@ footer .f_list .nest_list {
  }
  .navbar-collapse{
   position: absolute;
-  top: 120px;
+  top: 119px;
   left: 0;
   width: 100%;
   z-index: 999999;
@@ -1411,11 +1411,12 @@ footer .f_list .nest_list {
   .js-navbar-collapse.in{
     display: block!important;
   }
-}
-@media (max-width: 576px){
   header .left_, header .right_{
     margin-bottom: 10px;
   }
+}
+@media (max-width: 576px){
+
   header .right_{
     width: 70%;
   }
@@ -1424,5 +1425,13 @@ footer .f_list .nest_list {
   }
   .user_ .lang{
     margin-left: 0;
+  }
+  .lang .drop-content{
+    min-width: 110px;
+  }
+}
+@media (max-width: 450px){
+  header .left_, header .right_{
+    margin-bottom: 0px;
   }
 }
